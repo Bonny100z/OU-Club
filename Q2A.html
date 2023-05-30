@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ZY99935">
+    <link rel="stylesheet" href="Q2A.css">
+    <title>ZY99935 q2a</title>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="header-container">
+            <div class="header-bar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <div class="header-text">
+                    <h1>The OU Walking Club</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-container">
+            <nav class="navigation">
+                <a href="#">Walk Events</a>
+                <a href="#">Other Events</a>
+                <a href="#">News</a>
+                <a href="#">Membership</a>
+            </nav>
+        </div>
+        <div>
+            <nav class="navigation2">
+                <a href="#">Club Member Login</a>
+                <a href="#">Admin Login</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+
+            <div class="left-column">
+                <!-- Content for the left column -->
+                <h1>Email Announcements</h1>
+                <div>
+                    <input type="hidden" name="hiddenField" value="ee32-ff67-abcd1234-9090">
+                </div>
+                <div class="email-form">
+                    <label for="summary">Summary:</label>
+                    <input type="text" id="summary" name="summary" required>
+                </div>
+                <div class="email-form">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="email-form">
+                    <label for="attachment">Attachment:</label>
+                    <input type="file" id="attachment" name="attachment">
+                </div>
+                <div class="email-form">
+                    <label for="name">Senders-Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="email-form">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <button type="submit" class="send-button">Send Email</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="right-column">
+        <!-- Content for the right column -->
+        <div class="Logged-in">
+            <!-- Content for the top container -->
+            <div class="User">
+                <label for="User">Logged in as:</label>
+                <input type="text" id="User" name="User">
+                <a href="User"></a>
+            </div>
+            <div class="log--out">
+                <button class="logout">LOGOUT</button>
+            </div>
+        </div>
+        <div class="Admin-Nav">
+            <h3>Admin Tools</h3>
+            <!-- Content for the bottom container -->
+            <div class="Nav-Admin">
+                <nav class="nav">
+                    <a href="add-walk">Add New Walk Events</a>
+                    <a href="edit-walk">Edit Walk Event</a>
+                    <a href="add-other">Add New Other Events</a>
+                    <a href="club-members">Club Members</a>
+                    <a href="add-news">Add News</a>
+                    <a href="add-ann">Create Announcement</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
